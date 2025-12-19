@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Programming Language Hub</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root{
+  --primary:#1e40af;
+  --bg:#f8fafc;
+  --card:#ffffff;
+  --text:#0f172a;
+  --muted:#1e40af;
+}
+body{
+  margin:0;
+  font-family:"Segoe UI", sans-serif;
+  background:var(--bg);
+  color:var(--text);
+}
+header{
+  background:linear-gradient(135deg,#97a5b9,#1e40af);
+  color:white;
+  padding:28px 20px;
+  text-align:center;
+}
+header h1{margin:0;}
+header p{margin-top:8px;color:#e0e7ff;}
+
+.search-box{
+  text-align:center;
+  margin:20px;
+}
+.search-box input{
+  padding:12px;
+  width:90%;
+  max-width:420px;
+  border-radius:10px;
+  border:1px solid #cbd5f5;
+}
+
+.container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:24px;
+  padding:24px;
+}
+.card{
+  background:var(--card);
+  padding:22px;
+  border-radius:18px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+.badge{
+  background:#22c55e;
+  color:white;
+  padding:4px 10px;
+  border-radius:999px;
+  font-size:12px;
+}
+.card h3{margin:12px 0;}
+.card a{
+  display:block;
+  margin:6px 0;
+  text-decoration:none;
+  font-weight:600;
+  color:var(--primary);
+}
+.section{
+  background:#f1f5f9;
+  padding:12px;
+  border-radius:10px;
+  margin-top:10px;
+  font-size:14px;
+}
+.section ul{padding-left:18px;margin:6px 0;}
+footer{
+  background:#8295ae;
+  text-align:center;
+  padding:14px;
+  font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Programming Language Hub</h1>
+  <p>Courses • Books • Practice • Mini Projects</p>
+</header>
+
+<div class="search-box">
+  <input type="text" id="search" placeholder="Search language..." onkeyup="searchLang()">
+</div>
+
+<div class="container">
+
+<!-- C -->
+<div class="card">
+<span class="badge">Beginner</span>
+<h3>C Programming</h3>
+<a href="https://www.youtube.com/watch?v=irqbmMNs2Bo" target="_blank">🎥 Full Course</a>
+<a href="https://en.wikibooks.org/wiki/C_Programming" target="_blank">📘 Book (English)</a>
+<a href="https://bn.wikibooks.org/wiki/সি_প্রোগ্রামিং" target="_blank">📗 Book (Bangla)</a>
+<a href="https://www.w3resource.com/c-programming-exercises/" target="_blank">🧠 Practice Link</a>
+<div class="section">
+<b>Mini Projects (10)</b>
+<ul>
+<li>Calculator</li><li>ATM Simulator</li><li>Student Record System</li>
+<li>Banking System</li><li>Library Management</li>
+<li>Quiz App</li><li>Tic Tac Toe</li>
+<li>Password Generator</li><li>File Handling System</li>
+<li>Number Guessing Game</li>
+</ul>
+</div>
+</div>
+
+<!-- C++ -->
+<div class="card">
+<span class="badge">Beginner</span>
+<h3>C++</h3>
+<a href="https://www.youtube.com/watch?v=8jLOx1hD3_o" target="_blank">🎥 Full Course</a>
+<a href="https://en.wikibooks.org/wiki/C%2B%2B_Programming" target="_blank">📘 Book (English)</a>
+<a href="https://bn.wikibooks.org/wiki/সি_প্লাস_প্লাস" target="_blank">📗 Book (Bangla)</a>
+<a href="https://www.w3resource.com/cpp-exercises/" target="_blank">🧠 Practice Link</a>
+<div class="section">
+<b>Mini Projects (10)</b>
+<ul>
+<li>Student Management</li><li>Snake Game</li><li>Bank System</li>
+<li>Inventory System</li><li>Library System</li>
+<li>Contact Book</li><li>Quiz Game</li>
+<li>Calendar App</li><li>Hotel Management</li>
+<li>File Compressor</li>
+</ul>
+</div>
+</div>
+
+<!-- Java -->
+<div class="card">
+<span class="badge">Beginner</span>
+<h3>Java</h3>
+<a href="https://www.youtube.com/watch?v=UmnCZ7-9yDY" target="_blank">🎥 Full Course</a>
+<a href="https://en.wikibooks.org/wiki/Java_Programming" target="_blank">📘 Book (English)</a>
+<a href="https://bn.wikibooks.org/wiki/জাভা" target="_blank">📗 Book (Bangla)</a>
+<a href="https://www.hackerrank.com/domains/tutorials/10-days-of-java" target="_blank">🧠 Practice Link</a>
+<div class="section">
+<b>Mini Projects (10)</b>
+<ul>
+<li>Student Management</li><li>Banking App</li><li>Quiz System</li>
+<li>Attendance System</li><li>Chat App</li>
+<li>Library Management</li><li>Calculator</li>
+<li>Currency Converter</li><li>Hotel Management</li>
+<li>File Encryption Tool</li>
+</ul>
+</div>
+</div>
+
+<!-- Python -->
+<div class="card">
+<span class="badge">Beginner</span>
+<h3>Python</h3>
+<a href="https://www.youtube.com/watch?v=rfscVS0vtbw" target="_blank">🎥 Full Course</a>
+<a href="https://automatetheboringstuff.com/" target="_blank">📘 Book (English)</a>
+<a href="https://bn.wikibooks.org/wiki/পাইথন_প্রোগ্রামিং" target="_blank">📗 Book (Bangla)</a>
+<a href="https://www.w3resource.com/python-exercises/" target="_blank">🧠 Practice Link</a>
+<div class="section">
+<b>Mini Projects (10)</b>
+<ul>
+<li>To-Do App</li><li>Password Generator</li><li>Web Scraper</li>
+<li>Calculator</li><li>Quiz App</li><li>Weather App</li>
+<li>Number Guessing Game</li><li>Chatbot</li>
+<li>URL Shortener</li><li>File Organizer</li>
+</ul>
+</div>
+</div>
+
+<!-- HTML -->
+<div class="card">
+<span class="badge">Beginner</span>
+<h3>HTML</h3>
+<a href="https://www.youtube.com/watch?v=pQN-pnXPaVg" target="_blank">🎥 Full Course</a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">📘 Book (English)</a>
+<a href="https://bn.wikibooks.org/wiki/এইচটিএমএল" target="_blank">📗 Book (Bangla)</a>
+<div class="section">
+<b>Mini Projects (10)</b>
+<ul>
+<li>Portfolio</li><li>Resume Page</li><li>Landing Page</li>
+<li>Blog Layout</li><li>Product Page</li>
+<li>Gallery</li><li>Contact Page</li>
+<li>Event Page</li><li>Restaurant Website</li>
+<li>College Website</li>
+</ul>
+</div>
+</div>
+
+<!-- JavaScript -->
+<div class="card">
+<span class="badge">Beginner</span>
+<h3>JavaScript</h3>
+<a href="https://www.youtube.com/watch?v=PkZNo7MFNFg" target="_blank">🎥 Full Course</a>
+<a href="https://eloquentjavascript.net/" target="_blank">📘 Book (English)</a>
+<a href="https://bn.wikibooks.org/wiki/জাভাস্ক্রিপ্ট" target="_blank">📗 Book (Bangla)</a>
+<div class="section">
+<b>Mini Projects (10)</b>
+<ul>
+<li>To-Do App</li><li>Calculator</li><li>Digital Clock</li>
+<li>Quiz App</li><li>Weather App</li>
+<li>Form Validation</li><li>Theme Toggle</li>
+<li>Counter App</li><li>Notes App</li>
+<li>Expense Tracker</li>
+</ul>
+</div>
+</div>
+
+<!-- C# -->
+<div class="card">
+<span class="badge">Beginner</span>
+<h3>C#</h3>
+<a href="https://www.youtube.com/watch?v=GhQdlIFylQ8" target="_blank">🎥 Full Course</a>
+<a href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="_blank">📘 Book (English)</a>
+<a href="https://bn.wikibooks.org/wiki/সি_শার্প" target="_blank">📗 Book (Bangla)</a>
+<div class="section">
+<b>Mini Projects (10)</b>
+<ul>
+<li>Console Calculator</li><li>Student Management</li>
+<li>ATM Program</li><li>Banking App</li>
+<li>Quiz System</li><li>File Manager</li>
+<li>Inventory System</li><li>Employee System</li>
+<li>Library Management</li><li>Login System</li>
+</ul>
+</div>
+</div>
+
+</div>
+
+<footer>
+  © 2025 Programming Language Hub | Complete & Correct
+</footer>
+
+<script>
+function searchLang(){
+  let input=document.getElementById("search").value.toLowerCase();
+  let cards=document.getElementsByClassName("card");
+  for(let i=0;i<cards.length;i++){
+    let title=cards[i].getElementsByTagName("h3")[0].innerText.toLowerCase();
+    cards[i].style.display = title.includes(input) ? "" : "none";
+  }
+}
+</script>
+
+</body>
+</html>
